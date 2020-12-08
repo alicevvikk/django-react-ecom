@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.featured {
+  text-align: center;
+  
+  letter-spacing: 5px;
+  font-size: 3em;
+  color: #587d71;
+}
+.featured-underline {
+  margin-bottom: 10px;
+
+  width: 7rem;
+  height: 0.15rem;
+  background: #754668;
+  margin-left: auto;
+  margin-right: auto;
+}
+.icons {
+  text-align: center;
+}
+.card-component {
+  background-color: aliceblue;
+}
+
+.slider {
+  text-align: center;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+
+.btn:hover {
+  color: white !important;
+}
+
+.card-img-top {
+  width: 100%;
+  border-radius: 0.25rem;
+  transition: all 0.3s linear;
+  display: block;
+}
+.card-group .card-img-top {
+  height: 225px;
+}
+.card {
+  margin-top: 30px;
+  margin-right: 3%;
+}
+
+.card-footer {
+  margin-top: 1rem;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.card-group {
+  gap: 2rem 1.5rem;
+}
+
+.card-price {
+  color: #ab7a5f;
+}
+.products-page {
+  text-align: center;
+  display: flex;
+}
+.card-text {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.1rem;
+  color: #ab7a5f;
+}
+.link {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ab7a5f;
+  
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  transition: all 0.3s linear ;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.card-img-top:hover {
+  opacity: 0.5;
+}
+
+.link:hover {
+  opacity: 1;
+}
+.card-img-top:hover + .link {
+  opacity: 1;
+}
+.card-filter {
+  text-align: center;
+  display: flex;
+}
+
+
+
+
+

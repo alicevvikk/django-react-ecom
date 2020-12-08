@@ -1,0 +1,29 @@
+    --07.12.2020--
+- Update database [X]
+    - Product Kind [X]
+    - Change lookKind function[x]
+
+- Change Navbar Item Names [x]
+- Add cart feature [] - tomorrow
+- Filter []
+    - Search Filter [x]
+    - Category Filter [x]
+    - Price Filter [] - tomorrow
+
+- Router [x]
+--------------------------
+    --08.12.2020--
+- Update Serializer [x]
+- Filter
+    - Update Category Filter [x]
+    - Price Filter [x]
+
+- Auth []
+- Cart feature []
+- Detail Page []
+- About Page render without reloading [x]
+- All pages render without reloading [x]
+---------------------------
+
+    
+
