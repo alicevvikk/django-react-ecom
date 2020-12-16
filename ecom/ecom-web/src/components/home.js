@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
-import CardComponent from "./homeCard";
-import SliderComponent from "./slider";
+import {CardComponent, SliderComponent} from './'
+
+
 import { getProducts } from "../lookup";
 
-function Home() {
+
+export function Home(props) {
+  const { cart, setCart } = props;
   const [products, setProducts] = useState([]);
   useEffect(() => {
     const myCallBack = (response, status) => {
@@ -16,14 +19,16 @@ function Home() {
   }, []);
   return (
     <div>
+      
       <div className="slider-component">
         <SliderComponent></SliderComponent>
       </div>
 
       <div className="card-component">
-        <CardComponent products={products}></CardComponent>
+        <CardComponent products={products} cart = {cart} setCart = {setCart}></CardComponent>
+        
       </div>
     </div>
   );
 }
-export default Home;
+

@@ -5,10 +5,10 @@
 
 - Change Navbar Item Names [x]
 - Add cart feature [] - tomorrow
-- Filter []
+- Filter [x]
     - Search Filter [x]
     - Category Filter [x]
-    - Price Filter [] - tomorrow
+    - Price Filter [x] - tomorrow
 
 - Router [x]
 --------------------------
@@ -18,12 +18,24 @@
     - Update Category Filter [x]
     - Price Filter [x]
 
-- Auth []
-- Cart feature []
-- Detail Page []
+- Auth [] -- tomorrow
+- Cart feature [] -- tomorrow
+- Detail Page [] -tomorrow
 - About Page render without reloading [x]
 - All pages render without reloading [x]
+- Add project to git.  [x]
 ---------------------------
+    --10.12.2020--
+- Add Router [x]
+- Auth [] 
+    - Login []
+    - Register []
+- Cart feature [] 
+- Detail Page [x]
+    - Detail Basic Design [x]
+    - Detail fetch [x]
+- About Page []
+- Update Navbar for Auth []
 
     
 

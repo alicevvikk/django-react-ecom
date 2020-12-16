@@ -7,10 +7,12 @@ import {
   Nav,
   NavItem,
   NavLink,
+  Badge
 } from "reactstrap";
 
 import { getNavbarItems } from "../lookup";
 import { BiCart } from "react-icons/bi";
+import { Link } from "react-router-dom";
 /*
 function getProductKinds(callBack) {
   var url = "http://localhost:8000/api/kinds";
@@ -28,8 +30,8 @@ function getProductKinds(callBack) {
   xhr.send();
 }
 */
-function NavbarComponent(props) {
-  const { currentPage, setCurrentPage } = props;
+export function NavbarComponent(props) {
+  const { cart, user } = props;
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
@@ -45,13 +47,6 @@ function NavbarComponent(props) {
     getNavbarItems(myCallBack);
   }, []);
 
-
-
-  const changeCurrentPage = (to) => {
-    console.log(to);
-    setCurrentPage(to);
-  };
-
   return (
     <Navbar color="light" light expand="md" sticky="top">
       <NavbarBrand className="ml-5 pl-5" href="/">
@@ -63,19 +58,23 @@ function NavbarComponent(props) {
           {navItems.map((navItem, index) => {
             return (
               <NavItem className="ml-5" key={index}>
-                <NavLink href="#" onClick={() => changeCurrentPage(navItem[1])}>
+                <NavLink tag={Link} to= {`/${navItem[1]}`} >
                   {navItem[1]}
                 </NavLink>
               </NavItem>
             );
           })}
+          {user.user === 'AnonymousUser' ? <NavItem ><a href="/accounts/login"> Login</a></NavItem>
+        : <NavItem> <a href="/accounts/logout"> Logout</a> </NavItem>}
         </Nav>
+
       </Collapse>
       <NavItem>
-        <BiCart></BiCart>
+        <BiCart size = "1.5rem"></BiCart>
+        <Badge color="primary"  >{cart.lengthOrder}</Badge>
       </NavItem>
     </Navbar>
   );
 }
 
-export default NavbarComponent;
+

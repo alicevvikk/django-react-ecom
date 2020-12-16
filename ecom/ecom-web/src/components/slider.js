@@ -1,7 +1,9 @@
 import React from "react";
 import {Button} from 'reactstrap'
+import { Link } from "react-router-dom";
 
-function SliderComponent() {
+
+export function SliderComponent() {
   return (
     <div className="slider container">
       
@@ -16,11 +18,11 @@ function SliderComponent() {
           out within the larger container.
         </p>
         <p className="lead">
-          <a href="/Electronic"><Button color="warning" className = "shop-btn btn">SHOP NOW</Button> </a>
+          <Button tag={Link} to="Products" color="warning" className = "shop-btn btn">SHOP NOW</Button> 
         </p>
       
     </div>
   );
 }
 
-export default SliderComponent;
+
